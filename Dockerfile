@@ -1,8 +1,8 @@
-FROM ubuntu:latest
+FROM ubuntu:trusty
 MAINTAINER Sebastian Kempken, mail@sebastian-kempken.de
 
 # Update to latest
-RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe" > /etc/apt/sources.list
+RUN echo "deb http://archive.ubuntu.com/ubuntu trusty main universe" > /etc/apt/sources.list
 RUN apt-get update
 RUN apt-get upgrade -y
 
